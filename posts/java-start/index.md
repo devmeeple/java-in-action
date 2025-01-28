@@ -42,3 +42,86 @@ public class HelloWorld {
 코드를 실행할 수 있다.
 
 운영체제의 독립성 덕분에 소스 코드를 작성하는 운영 체제와 서버 운영체제가 달라도 문제가 발생하지 않는다.
+
+# 2. Variable
+
+## Start of variable
+
+```java
+int a = 10000;
+
+int maxCaloriePerDay = 10000;
+boolean isDietPlanActive = true;
+```
+
+> 변수는 왜 필요할까?
+
+- 기술 도입은 주로 '유지보수에 용이하다'라고 요약한다. 하지만 일상에서 '그냥'과 같다고 생각한다. 표현을 다듬어보자. 변수는 의미전달을 위해 필요하다.
+- 값을 그대로 사용하면 의도 전달에 난항을 겪는다.
+- 특히 자주 사용하는 값을 다룰 때 변수를 사용하면 한번에 변경이 가능하여 유용하다.
+
+### TL;DR
+
+**패키지(Package)**
+
+> 패키지를 사용하는 이유는 무엇일까?
+
+- 패키지를 통해 비슷한 성격의 객체를 분류한다.
+
+**등호(Equality sign) vs. 대입 연산자(Assignment Operator)**
+
+$$
+x = 5
+$$
+
+- 수학에서 등호는 `=`이다. 자바 세계에서 `=`는 대입 연산자다. 
+
+```java
+int x = 5;
+```
+
+**변수의 소멸 시점(Variable Scope and Lifetime)**
+
+- 지금까지 학습한 변수는 지역 변수(Local Variable)다. 이후 배우는 변수의 유형에 따라 소멸 시점이 다르다.
+- 가비지 컬렉션(Garbage Collection)이 메모리를 관리한다. 스코프와 참조 상태에 의해 결정된다.
+
+## Change variable value
+
+- 메모리 관점에서 할당된 값을 변경할 때, 값을 어디로 사라질까?
+
+## Variable declaration and initialization
+
+![NOT QUITE MY TEMPO <출처: 위플래시>](whiplash-tempo.png)
+
+> 머리로 풀더라도 결국 손이 리듬을 기억해야 한다.
+
+- 초기화(Initialize), 선언(Declaration), 할당(Assignment)
+- 변수 이름은 메모리 관점에서 '식별자(identifier)'다.
+- 선언과 할당을 나눠 진행할 수 있다. 하지만 가급적 선언과 할당은 동시에 진행하자.
+- 왜 지역 변수는 개발자가 직접 초기화 해야할까?
+- 에러에도 종류가 있다? 컴파일 에러 vs. 런타임 에러
+- 최적화, 사용하지 않을꺼야? 꺼져.
+
+## Variable type 1
+
+- `String`은 왜 그럴까? 너 뭐 돼?
+- 타입은 용도에 맞게 사용한다. 떡볶이 그릇에는 떡볶이를, 국그릇에는 국을, 용도에 맞지 않는 사용은 허용하지 않는다.
+- 리터럴(Literal): 문자 값
+
+## Variable type 2
+
+- 변수가 허용하는 범위가 넓을수록 메모리 공간을 많이 사용한다. 용도에 맞게 사용하자.
+- 자주 사용하는 자료형
+- 외우지 않아도 된다. 맥락을 이해하자.
+- 선택과 집중이 필요하다. 사용하지 않는 요소는 우선순위에서 밀린다. 모든 내용을 암기하기 보단 반복으로 이해를 중점으로 학습하자.
+
+## Variable naming conventions
+
+![Naming conventions <출처: Reddit>](programmer-humor-naming.jpg)
+
+- 예약어란?
+- 변수 이름은 왜 중요할까? 의도?
+
+## Summary
+
+## See also
