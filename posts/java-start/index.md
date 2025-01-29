@@ -139,3 +139,29 @@ int x = 5;
 - Code Conventions
 
 ## See also
+
+# 3. Operator
+
+## Increment/Decrement operator
+
+- 증감은 자주 발생한다. 편의성을 제공한다.
+- 증감 연산자는 읽기 좋은 코드에 부합할까?
+- 연산자의 위치에 따라 연산 수행 시점이 달라진다. 전위(Prefix), 후위(Postfix)
+
+## Comparison Operators
+
+- 비교 연산자는 두 값을 비교할 때 사용한다.
+- 문자열은 `==`이 아닌 `equals`를 사용해야 한다. 왜 그럴까? 특정한 조건에 왜 실패할까?
+
+## Logical Operators
+
+- 자바는 단축 평가를 하지 않을까? 언어에 상관없이 단축 평가는 암묵적으로 진행될까?
+
+## Summary
+
+- 자주 사용하는 연산자
+    - 산술 연산자
+    - 증감 및 감소 연산자
+    - 비교 연산자
+    - 논리 연산자
+    - 대입 연산자
