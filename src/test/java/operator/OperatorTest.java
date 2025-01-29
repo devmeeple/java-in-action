@@ -37,7 +37,7 @@ public class OperatorTest {
     void scoreWithinPassingRange_ShouldReturnTrue() {
         int score = 80;
 
-        boolean result = score >= 80 && score <= 100;
+        boolean result = 80 <= score && score <= 100;
 
         assertTrue(result);
     }
