@@ -165,3 +165,9 @@ int x = 5;
     - 비교 연산자
     - 논리 연산자
     - 대입 연산자
+
+
+# 4. Condition
+
+- `if`문은 범용적이다. `switch`는 `switch expression` 사용으로 깔끔한 코드가 가능하다.
+- 삼항 연산자(conditional, ternary operator)
