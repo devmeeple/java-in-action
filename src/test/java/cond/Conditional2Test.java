@@ -77,4 +77,14 @@ class Conditional2Test {
                 throw new IllegalArgumentException("잘못된 학점");
         }
     }
+
+    @Test
+    void givenTwoIntegers_whenUsingTernaryOperator_thenReturnLargerValue() {
+        int a = 10;
+        int b = 20;
+
+        int result = (a > b) ? a : b;
+
+        assertEquals(20, result);
+    }
 }
