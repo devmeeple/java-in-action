@@ -2,8 +2,10 @@ package cond;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 // TODO: 2025.01.30 https://www.baeldung.com/parameterized-tests-junit-5
 class ConditionTest {
@@ -21,7 +23,19 @@ class ConditionTest {
         assertEquals(expectedGrade, result);
     }
 
+    @ParameterizedTest
+    @ValueSource(ints = {-1, 101})
+    void calculateGradeFor_NegativeScore_ShouldThrowException(int invalidStudentScore) {
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> calculateGradeFor(invalidStudentScore));
+
+        assertEquals("유효한 점수가 아닙니다. 다시 확인 바랍니다", exception.getMessage());
+    }
+
     private String calculateGradeFor(int studentScore) {
+        if (studentScore < 0 || studentScore > 100) {
+            throw new IllegalArgumentException("유효한 점수가 아닙니다. 다시 확인 바랍니다");
+        }
+
         if (studentScore >= 90) {
             return "A";
         }
