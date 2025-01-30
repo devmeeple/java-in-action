@@ -45,6 +45,15 @@ class ConditionTest {
         assertEquals(expectedVehicle, result);
     }
 
+    @Test
+    void convertWonTo_Dollar_ShouldReturnExpectedWon() {
+        int dollar = 10;
+
+        String result = convertWonTo(dollar);
+
+        assertEquals("환전 금액은 13000원입니다", result);
+    }
+
     private String calculateGradeFor(int studentScore) {
         if (studentScore < 0 || studentScore > 100) {
             throw new IllegalArgumentException("유효한 점수가 아닙니다. 다시 확인 바랍니다");
@@ -78,5 +87,18 @@ class ConditionTest {
         }
 
         return "비행기";
+    }
+
+    private String convertWonTo(int dollar) {
+        int exchangeRate = 1300;
+
+        if (dollar < 0) {
+            throw new IllegalArgumentException("잘못된 금액입니다");
+        }
+        if (dollar == 0) {
+            return "환전할 금액이 없습니다";
+        }
+
+        return String.format("환전 금액은 %d원입니다", exchangeRate * dollar);
     }
 }
