@@ -7,8 +7,7 @@ import org.junit.jupiter.params.provider.CsvSource;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.*;
 
 class Conditional2Test {
 
@@ -79,12 +78,30 @@ class Conditional2Test {
     }
 
     @Test
-    void givenTwoIntegers_whenUsingTernaryOperator_thenReturnLargerValue() {
+    void givenIntegers_whenUsingTernaryOperator_thenReturnBoolean() {
         int a = 10;
         int b = 20;
 
         int result = (a > b) ? a : b;
 
         assertEquals(20, result);
+    }
+
+    @Test
+    void givenEvenNumber_whenUsingTernaryOperator_thenReturnTrue() {
+        int x = 2;
+
+        boolean result = (x % 2 == 0) ? true : false;
+
+        assertTrue(result);
+    }
+
+    @Test
+    void givenOddNumber_whenUsingTernaryOperator_thenReturnFalse() {
+        int x = 3;
+
+        boolean result = (x % 2 == 0) ? true : false;
+
+        assertFalse(result);
     }
 }
