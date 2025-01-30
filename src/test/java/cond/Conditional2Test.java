@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class Conditional2Test {
 
@@ -49,6 +50,15 @@ class Conditional2Test {
         String result = getAchievementFor(grade);
 
         assertEquals(expected, result);
+    }
+
+    @Test
+    void getAchievementFor_Rating_ShouldThrowException() {
+        String invalidRating = "G";
+
+        IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> getAchievementFor(invalidRating));
+
+        assertEquals("잘못된 학점", exception.getMessage());
     }
 
     private String getAchievementFor(String grade) {
