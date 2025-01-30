@@ -61,20 +61,14 @@ class Conditional2Test {
     }
 
     private String getAchievementFor(String grade) {
-        switch (grade) {
-            case "A":
-                return "탁월한 성과";
-            case "B":
-                return "좋은 성과";
-            case "C":
-                return "준수한 성과";
-            case "D":
-                return "향상 필요";
-            case "F":
-                return "불합격";
-            default:
-                throw new IllegalArgumentException("잘못된 학점");
-        }
+        return switch (grade) {
+            case "A" -> "탁월한 성과";
+            case "B" -> "좋은 성과";
+            case "C" -> "준수한 성과";
+            case "D" -> "향상 필요";
+            case "F" -> "불합격";
+            default -> throw new IllegalArgumentException("잘못된 학점");
+        };
     }
 
     @Test
