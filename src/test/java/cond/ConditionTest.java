@@ -1,59 +1,27 @@
 package cond;
 
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
+// TODO: 2025.01.30 https://www.baeldung.com/parameterized-tests-junit-5
 class ConditionTest {
 
-    // TODO: 2025.01.30 Parameterized
-    @Test
-    void calculateGradeFor_90_ShouldBeA() {
-        int studentScore = 90;
-
+    @ParameterizedTest
+    @CsvSource({
+            "90, A",
+            "89, B",
+            "79, C",
+            "69, D",
+            "59, F"
+    })
+    void calculateGradeFor_ShouldReturnExpectedGrade(int studentScore, String expectedGrade) {
         String result = calculateGradeFor(studentScore);
-
-        assertEquals("A", result);
-    }
-
-    @Test
-    void calculateGradeFor_89_ShouldBeB() {
-        int studentScore = 89;
-
-        String result = calculateGradeFor(studentScore);
-
-        assertEquals("B", result);
-    }
-
-    @Test
-    void calculateGradeFor_79_ShouldBeC() {
-        int studentScore = 79;
-
-        String result = calculateGradeFor(studentScore);
-
-        assertEquals("C", result);
-    }
-
-    @Test
-    void calculateGradeFor_69_ShouldBeD() {
-        int studentScore = 69;
-
-        String result = calculateGradeFor(studentScore);
-
-        assertEquals("D", result);
-    }
-
-    @Test
-    void calculateGradeFor_59_ShouldBeF() {
-        int studentScore = 59;
-
-        String result = calculateGradeFor(studentScore);
-
-        assertEquals("F", result);
+        assertEquals(expectedGrade, result);
     }
 
     private String calculateGradeFor(int studentScore) {
-
         if (studentScore >= 90) {
             return "A";
         }
@@ -66,7 +34,6 @@ class ConditionTest {
         if (studentScore >= 60) {
             return "D";
         }
-
         return "F";
     }
 }
