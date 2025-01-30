@@ -1,6 +1,8 @@
 package cond;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.CsvSource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -33,5 +35,36 @@ class Conditional2Test {
         }
 
         return String.join(", ", movies);
+    }
+
+    @ParameterizedTest
+    @CsvSource({
+            "A, 탁월한 성과",
+            "B, 좋은 성과",
+            "C, 준수한 성과",
+            "D, 향상 필요",
+            "F, 불합격",
+    })
+    void getAchievementFor_Grade_ShouldBeCorrect(String grade, String expected) {
+        String result = getAchievementFor(grade);
+
+        assertEquals(expected, result);
+    }
+
+    private String getAchievementFor(String grade) {
+        switch (grade) {
+            case "A":
+                return "탁월한 성과";
+            case "B":
+                return "좋은 성과";
+            case "C":
+                return "준수한 성과";
+            case "D":
+                return "향상 필요";
+            case "F":
+                return "불합격";
+            default:
+                throw new IllegalArgumentException("잘못된 학점");
+        }
     }
 }
