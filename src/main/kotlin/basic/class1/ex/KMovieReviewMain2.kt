@@ -2,8 +2,8 @@ package basic.class1.ex
 
 fun main() {
     val reviews = listOf(
-        KotlinMovieReview("인셉션", "인생은 무한 루프"),
-        KotlinMovieReview("어바웃 타임", "인생 시간 영화")
+        KMovieReview("인셉션", "인생은 무한 루프"),
+        KMovieReview("어바웃 타임", "인생 시간 영화")
     )
 
     for (review in reviews) {

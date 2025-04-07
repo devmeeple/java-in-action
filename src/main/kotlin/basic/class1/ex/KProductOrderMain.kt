@@ -2,9 +2,9 @@ package basic.class1.ex
 
 fun main() {
     val orders = listOf(
-        KotlinProductOrder("두부", 2000, 2),
-        KotlinProductOrder("김치", 5000, 1),
-        KotlinProductOrder("콜라", 1500, 2)
+        KProductOrder("두부", 2000, 2),
+        KProductOrder("김치", 5000, 1),
+        KProductOrder("콜라", 1500, 2)
     )
 
     var totalAmount = 0
