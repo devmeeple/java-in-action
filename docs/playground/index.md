@@ -32,3 +32,7 @@
 5 10 (엔터)
 두 수의 합은 15입니다.
 ```
+
+**참고 자료**
+
+- [Kotlin Docs 'Standard input'](https://kotlinlang.org/docs/standard-input.html)
