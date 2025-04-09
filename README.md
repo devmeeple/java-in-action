@@ -1,13 +1,7 @@
-# JVM in Action
+# Java in Action
 
-학습 테스트를 통해 JVM(Java, Kotlin)과 친해지자.
+### 참고 자료
 
-## 🖋️ 블로깅
-
-| 순번 | 포스트                                          | 태그         |
-|----|----------------------------------------------|------------|
-| 1  | [어느 날 고민 많은 주니어 개발자가 찾아왔다](docs/index.md) | `학습`, `성장` |
-
-**<참고 자료>**
-
-- [『자바 퍼즐러』(조슈아 블리크·닐 개프터, 한빛미디어, 2014)](https://product.kyobobook.co.kr/detail/S000001057567)
+- [김영한의 실전 자바](https://inf.run/7KDww)
+- [dev.java](https://dev.java/)
+- [만들어 가면서 배우는 JAVA 플레이그라운드](https://inf.run/FgzS)
