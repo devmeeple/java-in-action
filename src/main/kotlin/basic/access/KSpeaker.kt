@@ -1,6 +1,6 @@
 package basic.access
 
-class KSpeaker(var volume: Int) {
+class KSpeaker(private var volume: Int) {
     fun volumeUp() {
         if (volume >= 100) {
             println("음량을 증가할 수 없습니다. 최대 음량입니다.")
