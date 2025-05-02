@@ -15,32 +15,16 @@ public class GugudanCalculatorApplication {
         System.out.println();
         System.out.printf("<%d단 출력>\n", dan);
 
-        int result = dan * 1;
-        System.out.printf("%d * 1 = %d\n", dan, result);
+        for (int i = 1; i < 10; i++) {
+            System.out.printf("%d * %d = %d\n", dan, i, dan * i);
+        }
 
-        result = dan * 2;
-        System.out.printf("%d * 2 = %d\n", dan, result);
-
-        result = dan * 3;
-        System.out.printf("%d * 3 = %d\n", dan, result);
-
-        result = dan * 4;
-        System.out.printf("%d * 4 = %d\n", dan, result);
-
-        result = dan * 5;
-        System.out.printf("%d * 5 = %d\n", dan, result);
-
-        result = dan * 6;
-        System.out.printf("%d * 6 = %d\n", dan, result);
-
-        result = dan * 7;
-        System.out.printf("%d * 7 = %d\n", dan, result);
-
-        result = dan * 8;
-        System.out.printf("%d * 8 = %d\n", dan, result);
-
-        result = dan * 9;
-        System.out.printf("%d * 9 = %d\n", dan, result);
+        System.out.println("---------------------");
+        int i = 1;
+        while (i < 10) {
+            System.out.printf("%d * %d = %d\n", dan, i, dan * i);
+            i++;
+        }
 
     }
 }
