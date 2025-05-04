@@ -12,19 +12,15 @@ public class GugudanCalculatorApplication {
         final int dan = scanner.nextInt();
         scanner.close();
 
-        System.out.println();
-        System.out.printf("<%d단 출력>\n", dan);
+        if (dan < 2 || dan > 9) {
+            System.out.println("2이상, 9이하의 숫자만 입력할 수 있습니다.");
+        } else {
+            System.out.println();
+            System.out.printf("<%d단 출력>\n", dan);
 
-        for (int i = 1; i < 10; i++) {
-            System.out.printf("%d * %d = %d\n", dan, i, dan * i);
+            for (int i = 1; i < 10; i++) {
+                System.out.printf("%d * %d = %d\n", dan, i, dan * i);
+            }
         }
-
-        System.out.println("---------------------");
-        int i = 1;
-        while (i < 10) {
-            System.out.printf("%d * %d = %d\n", dan, i, dan * i);
-            i++;
-        }
-
     }
 }
