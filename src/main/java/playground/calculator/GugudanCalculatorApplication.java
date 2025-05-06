@@ -2,18 +2,24 @@ package playground.calculator;
 
 public class GugudanCalculatorApplication {
     public static void main(String[] args) {
-        for (int dan = 2; dan <= 9; dan++) {
-            int[] result = new int[9];
+        for (int i = 2; i < 10; i++) {
+            int[] result = calculate(i);
+            print(result);
+        }
+    }
 
-            for (int i = 0; i < result.length; i++) {
-                result[i] = dan * (i + 1);
-            }
+    public static int[] calculate(int dan) {
+        int[] result = new int[9];
 
-            System.out.println("=== " + dan + "단 ===");
-            for (int i = 0; i < result.length; i++) {
-                System.out.println(dan + " X " + (i + 1) + " = " + result[i]);
-            }
-            System.out.println();
+        for (int i = 0; i < result.length; i++) {
+            result[i] = dan * (i + 1);
+        }
+        return result;
+    }
+
+    public static void print(int[] result) {
+        for (int i = 0; i < result.length; i++) {
+            System.out.println(result[i]);
         }
     }
 }
