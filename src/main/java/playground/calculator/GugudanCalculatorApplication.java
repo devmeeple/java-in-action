@@ -5,8 +5,12 @@ import playground.calculator.io.OutputHandler;
 
 public class GugudanCalculatorApplication {
     public static void main(String[] args) {
-        int dan = ConsoleInputHandler.getInput();
-        String[][] result = GugudanCalculator.calculate(dan);
+        int[] range = ConsoleInputHandler.getInputRange();
+
+        int danLimit = range[0];
+        int mulLimit = range[1];
+
+        String[][] result = GugudanCalculator.calculate(danLimit, mulLimit);
 
         OutputHandler.print(result);
     }
