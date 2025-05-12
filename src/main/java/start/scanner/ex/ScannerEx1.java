@@ -7,7 +7,7 @@ import java.util.Scanner;
  * 사용자로부터 입력받은 이름과 나이를 출력
  * 출력: 당신의 이름은 [이름]이고, 나이는 [나이]살입니다.
  */
-public class Scannerex1 {
+public class ScannerEx1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
