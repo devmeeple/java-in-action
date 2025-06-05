@@ -1,15 +1,6 @@
 package start.cond;
 
-/**
- * 회원 등급에 따라 쿠폰 발급
- * <p>
- * 1등급: 쿠폰 1000
- * 2등급: 쿠폰 2000
- * 3등급: 쿠폰 3000
- * 해당하지 않음: 쿠폰 500
- */
 public class Switch3 {
-
     public static void main(String[] args) {
         int grade = 2;
 
