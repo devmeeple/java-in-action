@@ -6,12 +6,11 @@ package start.cond;
  * 14세 이상 16세 이하: 중학생
  * 17세 이상 19세 이하: 고등학생
  * 20세 이상: 성인
- *
+ * <p>
  * 1. 불필요한 조건 검사, 모든 조건을 검사 중이다.
  * 2. 조건을 중복 검증하고 있다.
  */
 public class If3 {
-
     public static void main(String[] args) {
         int age = 14;
 
@@ -30,6 +29,5 @@ public class If3 {
         if (age >= 20) {
             System.out.println("성인");
         }
-
     }
 }

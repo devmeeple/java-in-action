@@ -1,7 +1,6 @@
 package start.cond;
 
 public class If4 {
-
     public static void main(String[] args) {
         int age = 14;
 
@@ -16,6 +15,5 @@ public class If4 {
         } else {
             System.out.println("성인");
         }
-
     }
 }
