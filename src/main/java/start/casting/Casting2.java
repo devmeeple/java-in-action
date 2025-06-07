@@ -6,7 +6,7 @@ public class Casting2 {
         int intValue = 0;
 
 //        intValue = doubleValue;
-        intValue = (int)doubleValue;
-        System.out.println("intValue = " + intValue);
+        intValue = (int) doubleValue;
+        System.out.println(intValue);
     }
 }
