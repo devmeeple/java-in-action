@@ -9,15 +9,15 @@ public class Method2 {
         printStudent(student2);
     }
 
-    static void printStudent(Student student) {
-        System.out.println("이름:" + student.name + " 나이:" + student.age + " 성적:" + student.grade);
-    }
-
     static Student createStudent(String name, int age, int grade) {
         Student student = new Student();
         student.name = name;
         student.age = age;
         student.grade = grade;
         return student;
+    }
+
+    static void printStudent(Student student1) {
+        System.out.println("이름:" + student1.name + " 나이:" + student1.age + " 성적:" + student1.grade);
     }
 }
