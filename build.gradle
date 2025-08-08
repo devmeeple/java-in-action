@@ -5,6 +5,14 @@ plugins {
 group = "io.github.devmeeple"
 version = "1.0-SNAPSHOT"
 
+allprojects {
+    java {
+        toolchain {
+            languageVersion.set(JavaLanguageVersion.of(21))
+        }
+    }
+}
+
 repositories {
     mavenCentral()
 }
