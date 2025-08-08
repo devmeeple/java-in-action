@@ -4,4 +4,8 @@ plugins {
 
 rootProject.name = "java-in-action"
 
+// 김영한의 실전 자바 로드맵
 include("yhdev")
+
+// 실전 자바 소프트웨어 개발
+include 'real-world'
