@@ -1,4 +1,4 @@
-package ch02_bank_statements_analyzer;
+package ch02_bank_statements_analyzer.asis;
 
 import java.io.IOException;
 import java.nio.file.Files;
