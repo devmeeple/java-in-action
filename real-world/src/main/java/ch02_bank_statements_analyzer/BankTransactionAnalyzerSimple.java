@@ -4,6 +4,9 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.Month;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 
 public class BankTransactionAnalyzerSimple {
@@ -13,13 +16,17 @@ public class BankTransactionAnalyzerSimple {
         Path path = Paths.get(RESOURCES + args[0]);
         List<String> lines = Files.readAllLines(path);
         double total = 0d;
+        DateTimeFormatter DATE_PATTERN = DateTimeFormatter.ofPattern("dd-MM-yyyy");
 
         for (String line : lines) {
             String[] columns = line.split(",");
-            double amount = Double.parseDouble(columns[1]);
-            total += amount;
+            LocalDate date = LocalDate.parse(columns[0], DATE_PATTERN);
+            if (date.getMonth() == Month.JANUARY) {
+                double amount = Double.parseDouble(columns[1]);
+                total += amount;
+            }
         }
 
-        System.out.println("모든 거래 내역의 합: " + total);
+        System.out.println("1월 입출금 내역 합계: " + total);
     }
 }
