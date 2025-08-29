@@ -9,3 +9,6 @@ include("yhdev")
 
 // 실전 자바 소프트웨어 개발
 include 'real-world'
+
+// 자바의 정석
+include 'javajungsuk'
