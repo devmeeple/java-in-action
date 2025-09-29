@@ -85,3 +85,6 @@
     - 속성(property), 멤버 변수(member variable), 특성(attribute), 필드(field), 상태(state)
     - 기능(function), 메서드(method), 함수(function), 행위(behavior)
 - 인스턴스는 참조 변수를 통해서만 다룰 수 있으며, 참조 변수의 타입은 인스턴스의 타입과 일치해야 한다.
+- 객체 배열은 참조 변수를 하나로 묶은 참조 변수 배열이다.
+- **여러 종류의 객체를 하나의 배열에 저장하기**
+    - 다형성(polymorphism)을 통해 하나의 배열로 여러 종류의 객체를 다룰 수 있다.
