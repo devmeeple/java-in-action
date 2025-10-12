@@ -4,7 +4,8 @@ public class ArrayInitValue {
     public static void main(String[] args) {
         ArrayInitValue array = new ArrayInitValue();
 //        array.primitiveTypes();
-        array.referenceTypes();
+//        array.referenceTypes();
+        array.referenceTypesSetValue();
     }
 
     public void primitiveTypes() {
@@ -33,5 +34,17 @@ public class ArrayInitValue {
 
         System.out.println("strings[0] = " + strings[0]);
         System.out.println("array[0] = " + array[0]);
+    }
+
+    public void referenceTypesSetValue() {
+        String[] strings = new String[2];
+        ArrayInitValue[] array = new ArrayInitValue[2];
+        strings[0] = "Please visit www.GodOfJava.com.";
+        array[0] = new ArrayInitValue();
+
+        System.out.println("strings[0] = " + strings[0]);
+        System.out.println("strings[1] = " + strings[1]);
+        System.out.println("array[0] = " + array[0]);
+        System.out.println("array[1] = " + array[1]);
     }
 }
