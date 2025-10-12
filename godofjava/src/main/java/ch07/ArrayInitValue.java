@@ -3,7 +3,8 @@ package ch07;
 public class ArrayInitValue {
     public static void main(String[] args) {
         ArrayInitValue array = new ArrayInitValue();
-        array.primitiveTypes();
+//        array.primitiveTypes();
+        array.referenceTypes();
     }
 
     public void primitiveTypes() {
@@ -24,5 +25,13 @@ public class ArrayInitValue {
         System.out.println("doubleArray[0] = " + doubleArray[0]);
         System.out.println("charArray[0] = [" + charArray[0] + "]");
         System.out.println("byteArray[0] = " + byteArray[0]);
+    }
+
+    public void referenceTypes() {
+        String[] strings = new String[2];
+        ArrayInitValue[] array = new ArrayInitValue[2];
+
+        System.out.println("strings[0] = " + strings[0]);
+        System.out.println("array[0] = " + array[0]);
     }
 }
