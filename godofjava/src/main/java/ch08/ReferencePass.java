@@ -3,28 +3,24 @@ package ch08;
 public class ReferencePass {
     public static void main(String[] args) {
         ReferencePass reference = new ReferencePass();
-        reference.callPassByValue();
+        reference.callPassByReference();
     }
 
-    public void callPassByValue() {
-        int a = 10;
-        String b = "b";
+    public void callPassByReference() {
+        MemberDTO member = new MemberDTO("Taegeun");
 
-        System.out.println("Before passByValue()");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        System.out.println("Before passByReference()");
+        System.out.println("member.name = " + member.name);
 
-        passByValue(a, b);
-        System.out.println("After passByValue()");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+        passByReference(member);
+        System.out.println("After passByReference()");
+        System.out.println("member.name = " + member.name);
     }
 
-    public void passByValue(int a, String b) {
-        a = 20;
-        b = "z";
-        System.out.println("In passByValue()");
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
+    public void passByReference(MemberDTO member) {
+        member.name = "Geuntae";
+
+        System.out.println("In passByReference()");
+        System.out.println("member.name = " + member.name);
     }
 }
