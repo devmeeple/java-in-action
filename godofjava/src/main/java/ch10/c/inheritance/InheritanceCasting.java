@@ -11,6 +11,6 @@ public class InheritanceCasting {
         ChildCasting child = new ChildCasting();
 
         ParentCasting parent2 = child;
-//        ChildCasting child2 = parent;
+        ChildCasting child2 = (ChildCasting) parent;
     }
 }
