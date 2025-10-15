@@ -10,7 +10,7 @@ public class Equals {
         MemberDTO obj1 = new MemberDTO("Taegeun");
         MemberDTO obj2 = new MemberDTO("Taegeun");
 
-        if (obj1.equals(obj2)) {
+        if (obj1.equals(obj2)) { // check MemberDTO class
             System.out.println("obj1 and obj2 is same");
         } else {
             System.out.println("obj1 and obj2 is different");
