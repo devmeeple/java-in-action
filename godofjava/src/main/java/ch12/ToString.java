@@ -7,6 +7,10 @@ public class ToString {
         thisObject.toStringMethod2();
     }
 
+    public String toString() {
+        return "ToString class";
+    }
+
     public void toStringMethod(Object obj) {
         System.out.println(obj);
         System.out.println(obj.toString());
