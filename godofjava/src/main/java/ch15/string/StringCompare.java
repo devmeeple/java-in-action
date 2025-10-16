@@ -10,5 +10,6 @@ public class StringCompare {
         String text = "You must know String class.";
 
         System.out.println("text.length() = " + text.length());
+        System.out.println("text.isEmpty() = " + text.isEmpty());
     }
 }
