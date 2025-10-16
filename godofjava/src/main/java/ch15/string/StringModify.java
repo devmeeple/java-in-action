@@ -3,17 +3,16 @@ package ch15.string;
 public class StringModify {
     public static void main(String[] args) {
         StringModify sample = new StringModify();
-        sample.checkTrim();
+        sample.checkReplace();
     }
+    
+    public void checkReplace() {
+        String text = "The String class represents character strings.";
 
-    public void checkTrim() {
-        String[] strings = {
-                " a", " b ", "    c", "d    ", "e   f", "   "
-        };
-
-        for (String string : strings) {
-            System.out.println("[" + string + "] ");
-            System.out.println("[" + string.trim() + "] ");
-        }
+        System.out.println(text.replace('s', 'z'));
+        System.out.println(text);
+        System.out.println(text.replace("tring", "trike"));
+        System.out.println(text.replaceAll(" ", "|"));
+        System.out.println(text.replaceFirst(" ", "|"));
     }
 }
