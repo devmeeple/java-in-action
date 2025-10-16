@@ -3,17 +3,18 @@ package ch16.inner;
 public class AnonymousSample {
     public static void main(String[] args) {
         AnonymousSample sample = new AnonymousSample();
-        sample.setButtonListenerAnonymous();
+        sample.setButtonListenerAnonymousObject();
     }
 
-    public void setButtonListenerAnonymous() {
+    public void setButtonListenerAnonymousObject() {
         MagicButton button = new MagicButton();
-        button.setListener(new EventListener() {
+        EventListener listener = new EventListener() {
             @Override
             public void onClick() {
                 System.out.println("Magic Button Clicked !!!");
             }
-        });
+        };
+        button.setListener(listener);
         button.onClickProcess();
     }
 }
