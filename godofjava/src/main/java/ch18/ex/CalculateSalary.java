@@ -1,4 +1,4 @@
-package c.middle;
+package ch18.ex;
 
 public class CalculateSalary {
     public static void main(String[] args) {

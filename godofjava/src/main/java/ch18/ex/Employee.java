@@ -1,4 +1,4 @@
-package c.middle;
+package ch18.ex;
 
 public class Employee {
     private String name;
