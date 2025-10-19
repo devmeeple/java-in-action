@@ -8,8 +8,8 @@ public class CardWildcardSample {
     }
 
     public void callBoundWildcardMethod() {
-        WildcardGeneric<Car> wildcard = new WildcardGeneric<>();
-        wildcard.setWildcard(new Car("Mustang"));
+        WildcardGeneric<Bus> wildcard = new WildcardGeneric<>();
+        wildcard.setWildcard(new Bus("6900"));
         boundedWildcardMethod(wildcard);
     }
 
