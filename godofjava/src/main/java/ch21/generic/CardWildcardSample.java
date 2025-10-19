@@ -4,17 +4,17 @@ public class CardWildcardSample {
     public static void main(String[] args) {
         CardWildcardSample sample = new CardWildcardSample();
 
-        sample.callBoundWildcardMethod();
+        sample.callGenericMethod();
     }
 
-    public void callBoundWildcardMethod() {
-        WildcardGeneric<Bus> wildcard = new WildcardGeneric<>();
-        wildcard.setWildcard(new Bus("6900"));
-        boundedWildcardMethod(wildcard);
+    public void callGenericMethod() {
+        WildcardGeneric<String> wildcard = new WildcardGeneric<>();
+        genericMethod(wildcard, "Data");
     }
 
-    public void boundedWildcardMethod(WildcardGeneric<? extends Car> c) {
-        Car value = c.getWildcard();
+    public <T> void genericMethod(WildcardGeneric<T> c, T addValue) {
+        c.setWildcard(addValue);
+        T value = c.getWildcard();
         System.out.println(value);
     }
 }
