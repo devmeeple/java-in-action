@@ -85,6 +85,23 @@
 7. `Deque`는 Double Ended Queue의 약어다. 양쪽(앞뒤)에서 데이터 삽입과 삭제가 모두 가능한 자료구조다.
 8. `LikedList`는 이중 연결 리스트로, 삽입·삭제는 빠르지만 인덱스 접근은 느리다. 더불어 `List`, `Queue`, `Deque`로 모두 활용 가능하다.
 
+## 24. 자바랭 다음으로 많이 쓰는 애들은 컬렉션(Map)
+
+1. `Map`은 `key-value`(키-값) 형태로 데이터를 저장한다. 각 키는 유일해야 하며, 중복 키는 허용하지 않는다. 동일한 키로 데이터를 저장하면 기존값을 덮어쓴다.
+2. 데이터를 저장하는 메서드는 `put(K key, V value)`이다.
+3. 특정 키에 해당하는 값을 가져오는 메서드는 `get(Object key)`다.
+4. 특정 키와 연결된 데이터를 지우는 메서드는 `remove(Object key)`다.
+5. `keySet()`을 통해 모든 키를 `Set<K>` 형태로 반환한다.
+6. `size()`는 현재 `Map`에 저장된 `key-value` 쌍 개수를 반환한다.
+7. `HashMap`은 키와 값 모두 `null`을 허용한다.
+    - `null`을 허용하지 않던 이전 구현체 `Hashtable`과 달리 `null`키는 내부적으로 배열의 첫 번째 버킷(인덱스 0)에 저장된다.
+    - `null`키를 기본값(default value)으로 저장하는 용도로 사용하는 등, 편의성을 높였다.
+8. `Hashtable`은 스레드 안전(thread-safety) 하다. 내부의 모든 메서드가 `synchronized` 처리되어, 여러 스레드가 동시에 접근해도 안전하지만 성능이 느리다.
+9. `containsKey(Object key)`는 특정 키가 존재하는지 확인하는 메서드다.
+10. `TreeMap`은 키를 오름차순(기본 정렬)에 따라 정렬하여 저장한다.
+11. `Properties`는 `Hashtable<Object, Object>`을 상속한 클래스다. 주로 설정 파일을 읽고 쓰는 용도로 사용한다.
+12. `store(OutputStream out, string comments)`메서드는 `Properties` 객체에 저장된 데이터를 파일로 내보낼 때 사용한다.
+
 ### 참고 자료
 
 - [자바는 Call By Value(Pass By Value) 방식으로만 동작한다](https://mangkyu.tistory.com/322)
