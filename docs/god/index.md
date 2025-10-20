@@ -74,6 +74,17 @@
 14. `peek` 메서드는 가장 위에 있는 데이터를 조회만 한다.
 15. `pop` 메서드는 데이터를 삭제하고 반환한다.
 
+## 23. 자바랭 다음으로 많이 쓰는 애들은 컬렉션(Set과 Queue)
+
+1. `Set`은 중복을 허용하지 않고, 순서가 중요하지 않은 데이터를 하나의 객체에 저장할 때 사용한다.
+2. `HashSet(int initialCapacity)` 생성자는 초기 해쉬 테이블의 크기를 지정한다.
+3. `add(E e)`는 `HashSet`의 데이터를 추가한다.
+4. `contains(Object o)`는 특정 데이터가 존재하는지 확인한다.
+5. `remove(Object o)`는 특정 데이터를 삭제한다.
+6. FIFO는 First In First Out, 선입선출을 의미한다. 먼저 들어온 데이터가 가장 먼저 나간다.
+7. `Deque`는 Double Ended Queue의 약어다. 양쪽(앞뒤)에서 데이터 삽입과 삭제가 모두 가능한 자료구조다.
+8. `LikedList`는 이중 연결 리스트로, 삽입·삭제는 빠르지만 인덱스 접근은 느리다. 더불어 `List`, `Queue`, `Deque`로 모두 활용 가능하다.
+
 ### 참고 자료
 
 - [자바는 Call By Value(Pass By Value) 방식으로만 동작한다](https://mangkyu.tistory.com/322)
