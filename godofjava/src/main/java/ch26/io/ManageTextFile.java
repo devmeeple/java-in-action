@@ -1,6 +1,7 @@
 package ch26.io;
 
 import java.io.*;
+import java.util.Scanner;
 
 import static java.io.File.separator;
 
@@ -12,6 +13,7 @@ public class ManageTextFile {
 
         manager.writeFile(fullPath, numberCount);
         manager.readFile(fullPath);
+        manager.readFileWithScanner(fullPath);
     }
 
     public void writeFile(String fileName, int numberCount) {
@@ -78,6 +80,27 @@ public class ManageTextFile {
                 } catch (IOException ioe) {
                     ioe.printStackTrace();
                 }
+            }
+        }
+    }
+
+    public void readFileWithScanner(String fileName) {
+        File file = new File(fileName);
+        Scanner scanner = null;
+
+        try {
+            scanner = new Scanner(file);
+            while (scanner.hasNextLine()) {
+                System.out.println(scanner.nextLine());
+            }
+            System.out.println("Read success !!!");
+        } catch (FileNotFoundException fnfe) {
+            fnfe.printStackTrace();
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (scanner != null) {
+                scanner.close();
             }
         }
     }
