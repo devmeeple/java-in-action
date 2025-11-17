@@ -52,6 +52,14 @@ class BowlingGameTest {
         assertThat(game.score()).isEqualTo(24);
     }
 
+    @DisplayName("Perfect Game: 12번 연속 스트라이크 시 최종 점수는 300점이다.")
+    @Test
+    void perfectGame() {
+        rollMany(12, 10);
+
+        assertThat(game.score()).isEqualTo(300);
+    }
+
     private void rollStrike() {
         game.roll(10);
     }
