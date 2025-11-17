@@ -1,7 +1,6 @@
 package bowling;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -32,7 +31,6 @@ class BowlingGameTest {
         assertThat(game.getScore()).isEqualTo(20);
     }
 
-    @Disabled
     @DisplayName("One Spare: 첫 프레임 스페어(5,5) 후 3점 투구 시 총점은 16점이다.")
     @Test
     void oneSpare() {
