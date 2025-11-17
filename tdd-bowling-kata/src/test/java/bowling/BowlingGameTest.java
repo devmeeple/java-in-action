@@ -34,12 +34,16 @@ class BowlingGameTest {
     @DisplayName("One Spare: 첫 프레임 스페어(5,5) 후 3점 투구 시 총점은 16점이다.")
     @Test
     void oneSpare() {
-        game.roll(5);
-        game.roll(5);
+        rollSpare();
         game.roll(3);
         rollMany(17, 0);
 
         assertThat(game.getScore()).isEqualTo(16);
+    }
+
+    private void rollSpare() {
+        game.roll(5);
+        game.roll(5);
     }
 
     private void rollMany(int n, int pins) {
