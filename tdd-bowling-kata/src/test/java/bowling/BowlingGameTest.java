@@ -41,6 +41,17 @@ class BowlingGameTest {
         assertThat(game.getScore()).isEqualTo(16);
     }
 
+    @DisplayName("One Strike: 첫 프레임 스트라이크 후 3점, 4점 투구 시 총점은 24점이다.")
+    @Test
+    void oneStrike() {
+        game.roll(10);
+        game.roll(3);
+        game.roll(4);
+        rollMany(16, 0);
+
+        assertThat(game.getScore()).isEqualTo(24);
+    }
+
     private void rollSpare() {
         game.roll(5);
         game.roll(5);
