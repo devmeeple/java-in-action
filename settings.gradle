@@ -12,3 +12,6 @@ include 'godofjava'
 
 // 토비의 스프링 '코틀린으로 만드는 TDD Bowling Kata'
 include 'tdd-bowling-kata'
+
+// 헤드퍼스트 자바 3판(Head First Java 3rd Edition)
+include 'head-first-java'
