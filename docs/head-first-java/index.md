@@ -94,3 +94,42 @@
 - 객체의 동치는 개발자가 어떻게 정의하는지에 따라 달라진다.
 - 동일성(Identity): 같은 메모리 주소를 참조하는지, 완전히 동일한 객체인지 판단한다. `==` 연산자 사용
 - 동등성(Equality): 객체가 논리적으로 같은 값을 가지고 있는지 판단한다. `equals()` 메서드 사용
+
+## 5. 프로그램 만들기
+
+- 반복 조건이 명확할 때는 `for`문 사용을 권장, 명확하지 않을 때는 `while`문을 권장한다.
+
+### 난수 생성하기
+
+**Math.random()**
+
+```java
+// 0.0 이상 1.0 미만의 double 난수
+double radomDouble = Math.random();
+
+// 1부터 10까지의 정수 난수
+int randomInt = (int) (Math.random() * 10) + 1;
+```
+
+- `Math.random()`은 자바 초기 버전 부터 사용하던 정적 메서드
+- `0.0`(포함) 이상 `1.0`(제외) 미만의 `double` 타입 난수를 반환한다.
+
+**java.util.Random 클래스**
+
+```java
+Random random = new Random();
+
+// 0~99 까지의 난수
+int randomInt = random.nextInt(100);
+
+// 0.0 이상 1.0 미만 난수
+double randomDouble = random.nextDouble();
+```
+
+- `Math.random()` 메서드보다 다양하고 유연한 난수 생성 기능을 제공
+- `nextInt()`, `nextDouble()` 등 다양한 타입의 난수를 생성하는 메서드 지원 
+
+**정리**
+
+- `Random` 클래스는 난수 생성 로직의 스레드 안정성(Thread Safety)을 보장한다. 하지만 안정성을 확보하는 방법 때문에 멀티 스레드 환경에서는 성능 문제가 발생한다.
+- 멀티 스레드 환경에서는 `ThreadLocalRandom`을 사용한다. `Random` 클래스의 동기화 오버헤드 문제를 해결하기 위해 JDK 7에 도입됐다.
