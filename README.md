@@ -13,3 +13,4 @@
 - [김영한의 실전 자바](https://inf.run/7KDww)
 - [만들어 가면서 배우는 JAVA 플레이그라운드](https://inf.run/FgzS)
 - [토비의 스프링 '코틀린으로 만드는 TDD Bowling Kata'](https://youtu.be/8JLILHs0_yk?si=iUXd5zE-GhK5qcIt)
+- [Top 13 Java Programming Books for Beginners and Experienced - Best of lot, Must Read](https://javarevisited.blogspot.com/2018/07/top-9-java-programming-books-best-must-read.html)
