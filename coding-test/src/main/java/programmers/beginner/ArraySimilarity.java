@@ -1,17 +1,16 @@
 package programmers.beginner;
 
+import java.util.Arrays;
+import java.util.Set;
+import java.util.stream.Collectors;
+
 public class ArraySimilarity {
 
     public int solution(String[] s1, String[] s2) {
-        int result = 0;
+        Set<String> comparisonSet = Arrays.stream(s2).collect(Collectors.toSet());
 
-        for (int i = 0; i < s1.length; i++) {
-            for (int j = 0; j < s2.length; j++) {
-                if (s1[i].equals(s2[j])) {
-                    result++;
-                }
-            }
-        }
-        return result;
+        return (int) Arrays.stream(s1)
+                .filter(comparisonSet::contains)
+                .count();
     }
 }
