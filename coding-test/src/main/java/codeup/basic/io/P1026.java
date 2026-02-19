@@ -1,21 +1,15 @@
 package codeup.basic.io;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1026 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String text = scanner.next();
-        int[] time = Arrays.stream(text.split(":"))
-                .mapToInt(Integer::parseInt)
-                .toArray();
+        String input = scanner.next();
+        String[] parts = input.split(":");
 
-        int hour = time[0];
-        int minute = time[1];
-        int second = time[2];
-
+        int minute = Integer.parseInt(parts[1]);
         System.out.println(minute);
 
         scanner.close();
