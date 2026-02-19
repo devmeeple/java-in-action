@@ -1,22 +1,20 @@
 package codeup.basic.io;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1025 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String input = scanner.next();
-        int[] results = Arrays.stream(input.split(""))
-                .mapToInt(Integer::parseInt)
-                .toArray();
+        String number = scanner.next();
+        int place = 10000;
 
-        System.out.println("[" + (results[0] * 10000) + "]");
-        System.out.println("[" + (results[1] * 1000) + "]");
-        System.out.println("[" + (results[2] * 100) + "]");
-        System.out.println("[" + (results[3] * 10) + "]");
-        System.out.println("[" + (results[4]) + "]");
+        for (int i = 0; i < number.length(); i++) {
+//            int digit = Integer.parseInt(String.valueOf(number.charAt(i)));
+            int digit = number.charAt(i) - '0';
+            System.out.println("[" + (digit * place) + "]");
+            place /= 10;
+        }
 
         scanner.close();
     }
