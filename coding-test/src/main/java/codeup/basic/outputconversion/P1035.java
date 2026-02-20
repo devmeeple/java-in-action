@@ -8,9 +8,8 @@ public class P1035 {
 
         String input = scanner.next();
         int decimal = Integer.parseInt(input, 16);
-        String result = Integer.toOctalString(decimal);
 
-        System.out.println(result);
+        System.out.printf("%o", decimal);
 
         scanner.close();
     }
