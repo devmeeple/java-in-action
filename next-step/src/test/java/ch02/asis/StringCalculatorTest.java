@@ -66,4 +66,14 @@ class StringCalculatorTest {
 
         assertEquals(1, result);
     }
+
+    @DisplayName("커스텀 구분자를 지원한다")
+    @Test
+    void custom_separator() {
+        String text = "//;\n1;2;3";
+
+        int result = StringCalculator.add(text);
+
+        assertEquals(6, result);
+    }
 }
