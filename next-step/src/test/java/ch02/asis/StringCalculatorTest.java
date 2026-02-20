@@ -4,6 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class StringCalculatorTest {
 
@@ -75,5 +76,13 @@ class StringCalculatorTest {
         int result = StringCalculator.add(text);
 
         assertEquals(6, result);
+    }
+
+    @DisplayName("음수를 포함하면 예외가 발생한다")
+    @Test
+    void negative_number_throw_exception() {
+        String text = "1,-2,3";
+
+        assertThrows(IllegalArgumentException.class, () -> StringCalculator.add(text));
     }
 }
