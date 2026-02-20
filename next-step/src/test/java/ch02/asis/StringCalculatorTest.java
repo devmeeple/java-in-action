@@ -17,6 +17,16 @@ class StringCalculatorTest {
         assertEquals(0, result);
     }
 
+    @DisplayName("null이면 0을 반환한다")
+    @Test
+    void null_returns_zero() {
+        String text = null;
+
+        int result = StringCalculator.add(text);
+
+        assertEquals(0, result);
+    }
+
     @DisplayName("쉼표 구분자를 지원한다")
     @Test
     void comma_separator() {
