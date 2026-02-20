@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class StringCalculator {
 
     public static int add(String text) {
-        if (text.isBlank()) {
+        if (text == null || text.isBlank()) {
             return 0;
         }
 
