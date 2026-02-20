@@ -40,7 +40,7 @@ class StringCalculatorTest {
     @DisplayName("콜론 구분자를 지원한다")
     @Test
     void colon_delimiter() {
-        String text = "1,2";
+        String text = "1:2";
 
         int result = StringCalculator.add(text);
 
