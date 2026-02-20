@@ -29,7 +29,7 @@ class StringCalculatorTest {
 
     @DisplayName("쉼표 구분자를 지원한다")
     @Test
-    void comma_separator() {
+    void comma_delimiter() {
         String text = "1,2";
 
         int result = StringCalculator.add(text);
@@ -39,7 +39,7 @@ class StringCalculatorTest {
 
     @DisplayName("콜론 구분자를 지원한다")
     @Test
-    void colon_separator() {
+    void colon_delimiter() {
         String text = "1,2";
 
         int result = StringCalculator.add(text);
@@ -49,7 +49,7 @@ class StringCalculatorTest {
 
     @DisplayName("쉼표와 콜론을 함께 사용할 수 있다")
     @Test
-    void mixed_separators() {
+    void mixed_delimiters() {
         String text = "1,2:3";
 
         int result = StringCalculator.add(text);
@@ -69,7 +69,7 @@ class StringCalculatorTest {
 
     @DisplayName("커스텀 구분자를 지원한다")
     @Test
-    void custom_separator() {
+    void custom_delimiter() {
         String text = "//;\n1;2;3";
 
         int result = StringCalculator.add(text);
