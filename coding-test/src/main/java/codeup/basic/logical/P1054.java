@@ -6,10 +6,10 @@ public class P1054 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int number1 = scanner.nextInt();
-        int number2 = scanner.nextInt();
+        boolean a = scanner.nextInt() == 1;
+        boolean b = scanner.nextInt() == 1;
 
-        int result = (number1 == 1 && number2 == 1) ? 1 : 0;
+        int result = a && b ? 1 : 0;
         System.out.println(result);
 
         scanner.close();
