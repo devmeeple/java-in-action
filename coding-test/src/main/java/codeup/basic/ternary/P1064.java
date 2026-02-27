@@ -10,7 +10,7 @@ public class P1064 {
         int number2 = scanner.nextInt();
         int number3 = scanner.nextInt();
 
-        int result = (number1 < number2 ? number1 : number2) < number3 ? (number1 < number2 ? number1 : number2) : number3;
+        int result = Math.min(number1, Math.min(number2, number3));
         System.out.println(result);
 
         scanner.close();
