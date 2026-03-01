@@ -10,9 +10,22 @@ public class P1066 {
         int b = scanner.nextInt();
         int c = scanner.nextInt();
 
-        System.out.println(a % 2 == 0 ? "even" : "odd");
-        System.out.println(b % 2 == 0 ? "even" : "odd");
-        System.out.println(c % 2 == 0 ? "even" : "odd");
+        // TODO: 동일 구조의 반복, 메서드의 필요성을 느낌 혹은 삼항 연산자가 간결 2026-03-01
+        if (a % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+        if (b % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
+        if (c % 2 == 0) {
+            System.out.println("even");
+        } else {
+            System.out.println("odd");
+        }
 
         scanner.close();
     }
