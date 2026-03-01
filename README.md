@@ -6,6 +6,12 @@
 
 > [!INFO] 실전에서 사용하는 기능으로 기본기 최적화 하기
 
+## 코딩 테스트
+
+### 1. CodeUp
+
+- [코딩을 막 입문할 사람을 위한 강의](https://codeup.kr/classop.php?class_id=23241)
+
 ## TDD Bowling Kata
 
 - [간단한 볼링 게임 예제](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata)를 통해 TDD가 어떻게 이뤄지는지 알 수 있는 자료였다.
