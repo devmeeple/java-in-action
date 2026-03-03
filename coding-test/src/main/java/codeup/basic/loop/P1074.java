@@ -8,8 +8,9 @@ public class P1074 {
         Scanner scanner = new Scanner(System.in);
 
         int number = scanner.nextInt();
-        for (; number != 0; number--) {
+        while (number != 0) {
             System.out.println(number);
+            number--;
         }
 
         scanner.close();
