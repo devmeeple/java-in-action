@@ -11,11 +11,8 @@ public class P1087 {
         int sum = 0;
         int i = 1;
 
-        while (true) {
+        while (sum < number) {
             sum += i;
-            if (sum >= number) {
-                break;
-            }
             i++;
         }
         System.out.println(sum);
