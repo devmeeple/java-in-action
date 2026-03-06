@@ -1,5 +1,6 @@
 package codeup.basic.array.onedimension;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P1095 {
@@ -11,15 +12,10 @@ public class P1095 {
         int[] numbers = new int[count];
 
         for (int i = 0; i < numbers.length; i++) {
-            numbers[i]  = scanner.nextInt();
+            numbers[i] = scanner.nextInt();
         }
 
-        int min = numbers[0];
-        for (int i = 1; i < numbers.length; i++) {
-            if (min > numbers[i]) {
-                min = numbers[i];
-            }
-        }
+        int min = Arrays.stream(numbers).min().getAsInt();
         System.out.println(min);
 
         scanner.close();
