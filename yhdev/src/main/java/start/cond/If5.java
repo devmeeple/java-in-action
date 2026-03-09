@@ -1,11 +1,7 @@
 package start.cond;
 
-/**
- * 문제: 온라인 쇼핑몰 할인 시스템
- * 1) 아이템 가격이 10000원 이상이면, 1000원 할인한다.
- * 2) 나이가 10살 이하라면 1000원 할인한다.
- */
 public class If5 {
+
     public static void main(String[] args) {
         int price = 10000;
         int age = 10;

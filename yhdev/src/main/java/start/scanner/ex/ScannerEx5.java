@@ -2,14 +2,8 @@ package start.scanner.ex;
 
 import java.util.Scanner;
 
-/**
- * 문제6: 사이 숫자
- * 1) 정수 2개를 입력받고, 두 정수 사이의 모든 정수를 출력
- * - num1: 첫 번째 숫자
- * - num2: 두 번째 숫자
- * - num1이 num2보다 크다면, 두 숫자를 교환
- */
 public class ScannerEx5 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

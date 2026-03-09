@@ -3,6 +3,7 @@ package start.scanner;
 import java.util.Scanner;
 
 public class ScannerWhile3 {
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 

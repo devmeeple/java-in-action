@@ -1,10 +1,7 @@
 package start.cond;
 
-/**
- * 조건 하나로 해석하기 때문에 의도에 맞게 동작하지 않는다.
- * 따라서 요구사항에 따라 조건문을 작성한다.
- */
 public class If6 {
+
     public static void main(String[] args) {
         int price = 10000;
         int age = 10;

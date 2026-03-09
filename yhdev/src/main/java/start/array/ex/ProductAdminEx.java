@@ -2,20 +2,17 @@ package start.array.ex;
 
 import java.util.Scanner;
 
-/**
- * 문제9: 상품 관리 프로그램 만들기
- */
 public class ProductAdminEx {
+
     public static void main(String[] args) {
         int maxProducts = 10;
         String[] productNames = new String[maxProducts];
-        int[] productPrices = new int[maxProducts];
+        int[] productPrices =  new int[maxProducts];
         int productCount = 0;
 
         Scanner scanner = new Scanner(System.in);
         while (true) {
-            System.out.println("1 상품 등록 | 2. 상품 목록 | 3. 종료");
-            System.out.print("메뉴를 선택하세요:");
+            System.out.print("1. 상품 등록 | 2. 상품 목록 | 3. 종료\n메뉴를 선택하세요:");
             int menu = scanner.nextInt();
             scanner.nextLine();
 
@@ -37,7 +34,6 @@ public class ProductAdminEx {
                     System.out.println("등록된 상품이 없습니다.");
                     continue;
                 }
-
                 for (int i = 0; i < productCount; i++) {
                     System.out.println(productNames[i] + ": " + productPrices[i] + "원");
                 }

@@ -2,11 +2,8 @@ package start.scanner.ex;
 
 import java.util.Scanner;
 
-/**
- * 문제2: 홀수 짝수
- * 1) 정수 1개를 입력받고, 정수가 홀수인지 짝수인지 판별
- */
 public class ScannerEx2 {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

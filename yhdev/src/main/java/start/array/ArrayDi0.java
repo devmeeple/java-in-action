@@ -1,8 +1,9 @@
 package start.array;
 
 public class ArrayDi0 {
+
     public static void main(String[] args) {
-        int[][] arr = new int[2][3];
+        int[][] arr = new int[2][3]; // 행2, 열3
 
         arr[0][0] = 1;
         arr[0][1] = 2;

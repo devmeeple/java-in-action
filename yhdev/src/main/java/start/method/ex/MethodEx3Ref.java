@@ -1,10 +1,7 @@
 package start.method.ex;
 
-/**
- * 문제3: 입출금 리팩터링
- * 1) 입금(deposit)과 출금(withdraw) 메서드 정의
- */
 public class MethodEx3Ref {
+
     public static void main(String[] args) {
         int balance = 10000;
 

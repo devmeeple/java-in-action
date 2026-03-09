@@ -1,6 +1,7 @@
 package start.loop;
 
 public class Continue1 {
+
     public static void main(String[] args) {
         int i = 1;
 

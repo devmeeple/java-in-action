@@ -1,6 +1,7 @@
 package start.array;
 
 public class ArrayDi4 {
+
     public static void main(String[] args) {
         int[][] arr = new int[2][3];
 

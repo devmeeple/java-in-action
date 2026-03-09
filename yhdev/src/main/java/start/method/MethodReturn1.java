@@ -1,6 +1,7 @@
 package start.method;
 
 public class MethodReturn1 {
+
     public static void main(String[] args) {
         boolean result = odd(2);
         System.out.println(result);
@@ -10,7 +11,7 @@ public class MethodReturn1 {
         if (i % 2 == 1) {
             return true;
         } else {
-            return false;
+            return false; // Missing return statement
         }
     }
 }

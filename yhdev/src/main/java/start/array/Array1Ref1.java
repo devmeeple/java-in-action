@@ -1,6 +1,7 @@
 package start.array;
 
 public class Array1Ref1 {
+
     public static void main(String[] args) {
         int[] students;
         students = new int[5];

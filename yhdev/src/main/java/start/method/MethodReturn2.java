@@ -1,6 +1,7 @@
 package start.method;
 
 public class MethodReturn2 {
+
     public static void main(String[] args) {
         checkAge(10);
         checkAge(20);

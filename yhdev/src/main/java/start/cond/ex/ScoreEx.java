@@ -1,15 +1,7 @@
 package start.cond.ex;
 
-/**
- * 문제1: 학점 계산하기
- * 1) 학생의 점수를 기반으로 학점을 출력
- * - 90점 이상: A
- * - 80점 이상 90점 미만: B
- * - 70점 이상 80점 미만: C
- * - 60점 이상 70점 미만: D
- * - 60점 미만: F
- */
 public class ScoreEx {
+
     public static void main(String[] args) {
         int score = 85;
 
