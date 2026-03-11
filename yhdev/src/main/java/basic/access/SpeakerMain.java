@@ -13,7 +13,7 @@ public class SpeakerMain {
         speaker.showVolume();
 
         System.out.println("volume 필드 직접 접근 수정");
-        speaker.volume = 200;
+//        speaker.volume = 200; // 'volume' has private access in 'basic.access.Speaker'
         speaker.showVolume();
     }
 }
